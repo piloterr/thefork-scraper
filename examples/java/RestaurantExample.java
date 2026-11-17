@@ -14,7 +14,7 @@ public class RestaurantExample {
     }
 
     public static void main(String[] args) throws Exception {
-        String query = "query=" + enc("https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-06-13&rankedBy=SEARCH_ENGINE");
+        String query = "query=" + enc("https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-12-15&rankedBy=SEARCH_ENGINE");
 
         HttpRequest request = HttpRequest.newBuilder()
             .uri(URI.create("https://api.piloterr.com/v2/thefork/restaurant?" + query))

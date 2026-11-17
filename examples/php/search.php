@@ -3,7 +3,7 @@
 // Usage: PILOTERR_API_KEY=your-key php search.php
 
 $params = http_build_query([
-    'query' => 'https://www.thefork.fr/search?cityId=529135&date=2026-06-13&hour=660&partySize=8&timezone=Europe%2FParis',
+    'query' => 'https://www.thefork.fr/search?cityId=529135&date=2026-12-15&hour=660&partySize=8&timezone=Europe%2FParis',
 ]);
 
 $ch = curl_init('https://api.piloterr.com/v2/thefork/search?' . $params);

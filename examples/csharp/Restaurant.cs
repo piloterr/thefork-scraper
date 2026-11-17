@@ -10,7 +10,7 @@ using var http = new HttpClient { Timeout = TimeSpan.FromSeconds(120) };
 http.DefaultRequestHeaders.Add("x-api-key", apiKey);
 
 var query =
-    "query=" + Uri.EscapeDataString("https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-06-13&rankedBy=SEARCH_ENGINE");
+    "query=" + Uri.EscapeDataString("https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-12-15&rankedBy=SEARCH_ENGINE");
 
 var response = await http.GetAsync("https://api.piloterr.com/v2/thefork/restaurant?" + query);
 var body = await response.Content.ReadAsStringAsync();

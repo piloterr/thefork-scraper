@@ -68,7 +68,7 @@ response = requests.get(
     "https://api.piloterr.com/v2/thefork/restaurant",
     headers={"x-api-key": os.environ["PILOTERR_API_KEY"]},
     params={
-        "query": "https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-06-13&rankedBy=SEARCH_ENGINE",
+        "query": "https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-12-15&rankedBy=SEARCH_ENGINE",
     },
     timeout=120,
 )
@@ -137,7 +137,7 @@ type TheforkRestaurant = {
 };
 
 const params = new URLSearchParams({
-  "query": "https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-06-13&rankedBy=SEARCH_ENGINE",
+  "query": "https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-12-15&rankedBy=SEARCH_ENGINE",
 });
 
 const response = await fetch(`https://api.piloterr.com/v2/thefork/restaurant?${params}`, {
@@ -158,7 +158,7 @@ POST https://api.piloterr.com/v2/thefork/restaurant
 x-api-key: YOUR_API_KEY
 Content-Type: application/json
 
-{"query": "https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-06-13&rankedBy=SEARCH_ENGINE"}
+{"query": "https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-12-15&rankedBy=SEARCH_ENGINE"}
 ```
 </details>
 
@@ -307,7 +307,7 @@ response = requests.get(
     "https://api.piloterr.com/v2/thefork/search",
     headers={"x-api-key": os.environ["PILOTERR_API_KEY"]},
     params={
-        "query": "https://www.thefork.fr/search?cityId=529135&date=2026-06-13&hour=660&partySize=8&timezone=Europe%2FParis",
+        "query": "https://www.thefork.fr/search?cityId=529135&date=2026-12-15&hour=660&partySize=8&timezone=Europe%2FParis",
     },
     timeout=120,
 )
@@ -361,7 +361,7 @@ type TheforkSearch = {
 };
 
 const params = new URLSearchParams({
-  "query": "https://www.thefork.fr/search?cityId=529135&date=2026-06-13&hour=660&partySize=8&timezone=Europe%2FParis",
+  "query": "https://www.thefork.fr/search?cityId=529135&date=2026-12-15&hour=660&partySize=8&timezone=Europe%2FParis",
 });
 
 const response = await fetch(`https://api.piloterr.com/v2/thefork/search?${params}`, {
@@ -382,7 +382,7 @@ POST https://api.piloterr.com/v2/thefork/search
 x-api-key: YOUR_API_KEY
 Content-Type: application/json
 
-{"query": "https://www.thefork.fr/search?cityId=529135&date=2026-06-13&hour=660&partySize=8&timezone=Europe%2FParis"}
+{"query": "https://www.thefork.fr/search?cityId=529135&date=2026-12-15&hour=660&partySize=8&timezone=Europe%2FParis"}
 ```
 </details>
 
@@ -447,7 +447,7 @@ Example response from the API reference, abridged — real values depend on the 
   "pagination": {
     "next": 2,
     "current": 1,
-    "next_url": "https://www.thefork.fr/search?cityId=529135&date=2026-06-13&hour=660&partySize=8&timezone=Europe%2FParis#list25",
+    "next_url": "https://www.thefork.fr/search?cityId=529135&date=2026-12-15&hour=660&partySize=8&timezone=Europe%2FParis#list25",
     "per_page": 25,
     "total_count": 185,
     "total_pages": 8,

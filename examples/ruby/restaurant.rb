@@ -5,7 +5,7 @@ require "net/http"
 require "uri"
 
 uri = URI("https://api.piloterr.com/v2/thefork/restaurant")
-uri.query = URI.encode_www_form('query' => 'https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-06-13&rankedBy=SEARCH_ENGINE')
+uri.query = URI.encode_www_form('query' => 'https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-12-15&rankedBy=SEARCH_ENGINE')
 
 request = Net::HTTP::Get.new(uri)
 request["x-api-key"] = ENV.fetch("PILOTERR_API_KEY")

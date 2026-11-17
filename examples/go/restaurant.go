@@ -15,7 +15,7 @@ import (
 
 func main() {
 	params := url.Values{}
-	params.Set("query", "https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-06-13&rankedBy=SEARCH_ENGINE")
+	params.Set("query", "https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-12-15&rankedBy=SEARCH_ENGINE")
 
 	req, _ := http.NewRequest("GET", "https://api.piloterr.com/v2/thefork/restaurant?"+params.Encode(), nil)
 	req.Header.Set("x-api-key", os.Getenv("PILOTERR_API_KEY"))

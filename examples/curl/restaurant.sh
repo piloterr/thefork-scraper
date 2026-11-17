@@ -5,4 +5,4 @@ set -euo pipefail
 
 curl -sS --fail-with-body -G "https://api.piloterr.com/v2/thefork/restaurant" \
   -H "x-api-key: ${PILOTERR_API_KEY}" \
-  --data-urlencode 'query=https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-06-13&rankedBy=SEARCH_ENGINE'
+  --data-urlencode 'query=https://www.thefork.fr/restaurant/salamboo-amilkar-r10892#date=2026-12-15&rankedBy=SEARCH_ENGINE'

@@ -5,7 +5,7 @@ require "net/http"
 require "uri"
 
 uri = URI("https://api.piloterr.com/v2/thefork/search")
-uri.query = URI.encode_www_form('query' => 'https://www.thefork.fr/search?cityId=529135&date=2026-06-13&hour=660&partySize=8&timezone=Europe%2FParis')
+uri.query = URI.encode_www_form('query' => 'https://www.thefork.fr/search?cityId=529135&date=2026-12-15&hour=660&partySize=8&timezone=Europe%2FParis')
 
 request = Net::HTTP::Get.new(uri)
 request["x-api-key"] = ENV.fetch("PILOTERR_API_KEY")

@@ -15,7 +15,7 @@ import (
 
 func main() {
 	params := url.Values{}
-	params.Set("query", "https://www.thefork.fr/search?cityId=529135&date=2026-06-13&hour=660&partySize=8&timezone=Europe%2FParis")
+	params.Set("query", "https://www.thefork.fr/search?cityId=529135&date=2026-12-15&hour=660&partySize=8&timezone=Europe%2FParis")
 
 	req, _ := http.NewRequest("GET", "https://api.piloterr.com/v2/thefork/search?"+params.Encode(), nil)
 	req.Header.Set("x-api-key", os.Getenv("PILOTERR_API_KEY"))
